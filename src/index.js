@@ -10,8 +10,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 );
 
 
-
-
-
-// ваівавіаів
-// sdadfsdf

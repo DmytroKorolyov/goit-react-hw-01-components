@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactDOM } from "react";
 import Profile from "../components/Profile/Profile";
 import UserData from '../data/user.json'
 import Statistics from "../components/Statistics/Statistics";
