@@ -1,11 +1,12 @@
 // import UserStat from '../../data/user.json'
+import s from './Statistics.module.css'
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
+    <section className={s.statistics}>
   {title && <h2 className="title">{title}</h2>}
 
-          <ul className="stat-list">
+          <ul className={s.stat_list}>
               {stats.map(stat => (
     <li key={stat.id} class="item">
       <span className="label">{stat.label}</span>

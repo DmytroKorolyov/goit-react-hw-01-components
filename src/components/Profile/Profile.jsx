@@ -1,21 +1,23 @@
 // import UserData from '../../data/user.json'
 
+import s from './Profile.module.css'
+
 const Profile = ({ username, tag, location, avatar, stats }) => {
     // const { username, tag, location, avatar, stats } = UserData;
     return (
-        <div className="profile">
-  <div className="description">
+      <div className={s.profile}>
+  <div className={s.description}>
     <img
       src={avatar}
       alt="User avatar"
-      class="avatar"
+      class={s.avatar}
     />
     <p className="name">{username}</p>
-    <p className="tag">{tag}</p>
+    <p className="tag">@{tag}</p>
     <p className="location">{location}</p>
   </div>
 
-  <ul class="stats">
+  <ul className={s.stats}>
     <li>
       <span className="label">Followers</span>
       <span className="quantity">{stats.followers}</span>

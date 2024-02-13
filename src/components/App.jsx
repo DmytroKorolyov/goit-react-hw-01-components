@@ -21,13 +21,15 @@ export const App = () => {
 
     return (
     <div
-      style={{
+        style={{
+          flexDirection: 'column',
         height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+          color: '#010101',
+        padding: 40,
       }}
     >
       <Profile username={username}
