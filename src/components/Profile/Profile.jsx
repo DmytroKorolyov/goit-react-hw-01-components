@@ -10,7 +10,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
     <img
       src={avatar}
       alt="User avatar"
-      class={s.avatar}
+      className={s.avatar}
     />
     <p className="name">{username}</p>
     <p className="tag">@{tag}</p>
