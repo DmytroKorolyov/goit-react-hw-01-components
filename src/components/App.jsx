@@ -6,6 +6,8 @@ import Statistics from "../components/Statistics/Statistics";
 import UserStat from '../data/data.json'
 import FriendList from "../components/FriendList/FriendList";
 import UserFriends from '../data/friends.json'
+import TransactionHistory from "../components/TransactionHistory/TransactionHistory";
+import UserTransaction from '../data/transactions.json';
 
 
 
@@ -14,7 +16,7 @@ export const App = () => {
   const { username, tag, location, avatar, stats } = UserData;
   // const { title, stats } = UserStat;
   // const { title, stats: statData } = UserStat;
-  const { title } = UserStat;
+  // const { title } = UserStat;
 
 
     return (
@@ -34,6 +36,8 @@ export const App = () => {
         avatar={avatar}
           stats={stats} />
         <Statistics title="Upload stats" stats={UserStat} />
+        <FriendList friends={UserFriends} />
+        <TransactionHistory items={UserTransaction} />
     </div>
   );
 };
